@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- http://www.30sharp.com/flex/ -->
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+		layout="vertical"
+		verticalAlign="middle"
+		backgroundColor="white">
+
+	<mx:Array id="arr">
+		<mx:Object label="Accordion"
+				toolTip="30Sharp Custom Accordion Control"
+				icon="@Embed('assets/Accordion.png')" />
+		<mx:Object label="ApplicationControlBar"
+				toolTip="30Sharp Custom ApplicationControlBar Control"
+				icon="@Embed('assets/ApplicationControlBar.png')" />
+		<mx:Object label="Box"
+				toolTip="30Sharp Custom Box Control"
+				icon="@Embed('assets/Box.png')" />
+		<mx:Object label="Canvas"
+				toolTip="30Sharp Custom Canvas Control"
+				icon="@Embed('assets/Canvas.png')" />
+		<mx:Object label="ControlBar"
+				toolTip="30Sharp Custom ControlBar Control"
+				icon="@Embed('assets/ControlBar.png')" />
+	</mx:Array>
+
+	<mx:ButtonBar id="buttonBar"
+			dataProvider="{arr}"
+			labelField="label"
+			toolTipField="toolTip"
+			height="32" />
+			
+</mx:Application>
